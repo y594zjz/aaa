@@ -14,18 +14,7 @@ import com.atguigu.atcrowdfunding.bean.Permission;
 import com.atguigu.atcrowdfunding.manager.service.PermissionService;
 import com.atguigu.atcrowdfunding.util.StringUtil;
 
-/**
- * 授权拦截器
- * 只有用户拥有相应的权限，才能发送相应的请求。
- * 1）获取请求路径
- * 2）判断当前路径需要不需要授权
- * 3）如果不需要授权，那么直接访问
- * 4）如果需要授权，那么判断当前的用户是否具有相应的权限
- * 5）如果有相应的权限，那么继续访问
- * 6）如果没有相应的权限，跳转到错误页面
- * @author 18801
- *
- */
+
 public class AuthInterceptor extends HandlerInterceptorAdapter {
 
 	@Autowired
